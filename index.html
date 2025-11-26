@@ -356,21 +356,7 @@
 
     <div class="container">
         <div class="controls">
-            <div class="control-group">
-                <label>Age Group DE Data:</label>
-                <label for="file-agegroup" class="btn btn-secondary">Choose File</label>
-                <input type="file" id="file-agegroup" class="file-input" accept=".tsv,.txt,.csv">
-            </div>
-            <div class="control-group">
-                <label>Sex DE Data:</label>
-                <label for="file-sex" class="btn btn-secondary">Choose File</label>
-                <input type="file" id="file-sex" class="file-input" accept=".tsv,.txt,.csv">
-            </div>
-            <div class="control-group">
-                <label>Patient Survival Data:</label>
-                <label for="file-survival" class="btn btn-secondary">Choose File</label>
-                <input type="file" id="file-survival" class="file-input" accept=".tsv,.txt,.csv">
-            </div>
+           
             <div class="control-group">
                 <label>Survival Group By:</label>
                 <select id="group-select">
@@ -616,7 +602,6 @@
                 hovertemplate: '<b>%{text}</b><br>Log2FC: %{x:.3f}<br>-log10: %{y:.2f}<extra></extra>'
             };
 
-            const yAxisType = document.getElementById('volcano-yaxis').value;
             const yAxisLabel = yAxisType === 'fdr' ? '-log10(FDR)' : '-log10(P-value)';
 
             const layout = {
