@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("AI Assistant JS is running...");
+
+    // BEGIN existing ai.js code here (entire file)
 // ai.js - AI assistant wiring for the dashboard (GitHub Pages frontend)
 (() => {
   const API_URL = 'https://paad-groq-proxy.kumarprincebt.workers.dev/api/chat';
@@ -318,3 +322,5 @@
     analyzeUploadedDataset
   };
 })();
+      console.log("AI Assistant initialized.");
+});
